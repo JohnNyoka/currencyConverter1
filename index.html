@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Currency Converter</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="--clr:#1e9bff">
+    <div class="container">
+  <div class="holder">
+    <h1 class="title" data-text="Currency Converter..."> <span>C</span>urrency <span>Co</span>nverter...</h1>
+    <div class="exchange">
+             
+       <span class="flag">
+        <a target="_blank" title="Click"  href="https://www.google.com/search?q=south+african+currency&oq=south+african+currency&aqs=chrome..69i57j0i512l9.23031j0j7&sourceid=chrome&ie=UTF-8"><img src="images/1573133.webp" /></a>
+       </span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Rand </span>
+       <br>
+       <br>
+       <input type="number" id="rand"  placeholder="" oninput="converterToOthers('rand', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"><a target="_blank" title="Click"href="https://www.google.com/search?q=united+states+dollar+currency&oq=United+States+Dollar&aqs=chrome.4.0i512l10.6502j0j7&sourceid=chrome&ie=UTF-8"><img src="images/closeup-shot-waving-flag-united-states-america-with-interesting-textures_181624-15182.avif"></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">United States Dollar </span>
+       <br>
+       <br>
+       <input type="number" id="dollar" oninput="converterToOthers('dollar', this.value)">
+       
+       <br>
+       <br>
+      
+       <span class="flag"><a  target ="_blank" title="Click" href="https://www.shutterstock.com/search/british-pound-flag"><img src="images/flag-of-union-jack-uk-england-united-kingdom-flag-illustration-flag-of-great-britain-3d-illustration-3d-illustration-waving-colorful-flag-of-great-britain-free-vector.jpg" alt=""></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Pound sterling </span>
+       <br>
+       <br>
+       <input type="number" id="pound" oninput="converterToOthers('pound', this.value)">
+       <br>
+       <br>
+      
+       <span class="flag">
+        <a target="_blank"  title="Click" href="https://www.google.com/search?q=euro+flag&sxsrf=AB5stBj4TJ7KCeQOGw__lNN0HhfBl8gwMA:1688375269708&tbm=isch&source=iu&ictx=1&vet=1&fir=HQ3WHh_Wu4luTM%252CVFBgOSnj9irqoM%252C_%253BHW3u6PQm953xPM%252CnnBrYewzSgtSKM%252C_%253BeThpFJJT4_BgjM%252CDwboccHJWGB_3M%252C_%253B9RYAmJGyK7NOjM%252CqY_3tW8f2Nno_M%252C_%253BUNyOZmdvq9kTDM%252Cl0uCMvTyhuFmaM%252C_&usg=AI4_-kRPBuPgXBeVe43lvA9qcf-ZrQylUw&sa=X&ved=2ahUKEwjs8sqBmPL_AhU1QkEAHXWHBpYQ_h16BAhgEAE#imgrc=9RYAmJGyK7NOjM"><img src="images/europe-4886332_1280.webp" alt=""></a>
+       </span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Euro</span>
+       <br>
+       <br>
+       <input type="number" id="euro" oninput="converterToOthers('euro', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"> <a target="_blank"  title="Click" href="https://www.britannica.com/topic/flag-of-Switzerland"> <img src="images/Flag-Switzerland.webp" alt=""></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Swiss Franc</span>
+       <br>
+       <br>
+       <input type="number" id="swiss" oninput="converterToOthers('swiss', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"> <a target="_blank"  title="Click" href="https://www.google.com/search?q=Bahraini+Dinar+flag&oq=Bahraini+Dinar+flag&aqs=chrome..69i57j0i546l4.5852j0j7&sourceid=chrome&ie=UTF-8#imgrc=CTkmzXpfv_HrWM"> <img src="images/images.png" alt=""></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Bahraini Dinar</span>
+       <br>
+       <br>
+       <input type="number" id="Bahraini" oninput="converterToOthers('Bahraini', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"> <a target="_blank"  title="Click" href="https://en.wikipedia.org/wiki/Flag_of_Kuwait"> <img src="images/Flag_of_Kuwait.svg.png" alt=""></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Kuwaiti Dinar</span>
+       <br>
+       <br>
+       <input type="number" id="Kuwaiti" oninput="converterToOthers('Kuwaiti', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"> <a target="_blank"  title="Click"href="https://en.wikipedia.org/wiki/Flag_of_Australia"><img src="images/Flag_of_Australia_(converted).svg.png"></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Australian Dollar</span>
+       <br>
+       <br>
+       <input type="number" id="Australian" oninput="converterToOthers('Australian', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"><a target="_blank"  title="Click" href="https://www.worldatlas.com/flags/canada"><img src="images/ca-flag.webp"></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Canadian Dollar</span>
+       <br>
+       <br>
+       <input type="number" id="Canadian" oninput="converterToOthers('Canadian', this.value)">
+       <br>
+       <br>
+       
+       <span class="flag"><a target="_blank" title="Click" href="https://www.google.com/search?q=Jordanian+Dinar+flag&oq=Jordanian+Dinar+flag&aqs=chrome..69i57.4729j0j7&sourceid=chrome&ie=UTF-8"><img src="images/istockphoto-1429278980-612x612.jpg" alt=""></a></span>
+       <span class="symbol"></span>
+       <span class="currency" style="--clr:#1e9bff">Jordanian Dinar</span>
+       <br>
+       <br>
+       <input type="number" id="Jordanian" oninput="converterToOthers('Jordanian', this.value)">
+       <br>
+       <br>
+
+       <a class="buttn"> <button id="btn" style="--clr:#1e9bff" onclick="increment()">
+        <span>Convert</span>  <i></i>
+     </button> </a>
+  </div>
+
+
+         </div>
+    </div>
+    <script src="currency.js"></script>
+</body>
+</html>
